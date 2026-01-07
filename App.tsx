@@ -348,6 +348,27 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   );
 };
 
+const GuaranteeSection: React.FC = () => {
+  return (
+    <section className="bg-white px-6 py-16 border-t border-b border-slate-100">
+      <div className="max-w-md mx-auto text-center flex flex-col items-center">
+        <img 
+          src="https://i.imgur.com/FG64IL5.png" 
+          alt="Garantia 7 Dias" 
+          className="w-48 h-auto mb-6 drop-shadow-2xl"
+        />
+        <h2 className="text-3xl font-heading font-black text-slate-900 uppercase leading-tight tracking-tighter mb-4">
+          7 DIAS DE RISCO ZERO
+        </h2>
+        <div className="h-1.5 w-20 bg-red-600 rounded-full mb-6"></div>
+        <p className="text-slate-600 text-sm md:text-base leading-relaxed font-medium px-4">
+          O seu risco é absolutamente <span className="text-red-600 font-black">ZERO</span>. Você tem 7 dias inteiros para testar o Protocolo Lipo-Verme. Se por qualquer motivo você não se sentir satisfeito(a), ou achar que o método não é para você, basta nos enviar um e-mail e <span className="font-bold text-slate-900 underline">devolvemos 100% do seu investimento</span>, sem perguntas e sem complicações.
+        </p>
+      </div>
+    </section>
+  );
+};
+
 const App: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white">
@@ -569,6 +590,9 @@ const App: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Seção de Garantia */}
+      <GuaranteeSection />
 
       <section className="bg-slate-50 px-6 py-16">
         <div className="max-w-md mx-auto">
