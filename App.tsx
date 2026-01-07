@@ -32,7 +32,13 @@ const HeroCarousel: React.FC = () => {
   const images = [
     "https://i.imgur.com/msMb7Cv.jpeg",
     "https://i.imgur.com/55l7Rsp.jpeg",
-    "https://i.imgur.com/nLkZPaU.jpeg"
+    "https://i.imgur.com/nLkZPaU.jpeg",
+    "https://i.imgur.com/DANZYoJ.jpeg",
+    "https://i.imgur.com/aRneRN7.jpeg",
+    "https://i.imgur.com/0g2Sv1x.jpeg",
+    "https://i.imgur.com/tcrTEaW.jpeg",
+    "https://i.imgur.com/GptUdCu.jpeg",
+    "https://i.imgur.com/l42x86Q.jpeg"
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -365,6 +371,10 @@ const App: React.FC = () => {
           Descubra se você está contaminado em 60 segundos respondendo o Diagnóstico abaixo.
         </p>
 
+        <h2 className="text-red-600 font-black text-sm md:text-base mb-4 px-4 uppercase leading-tight italic max-w-[300px] mx-auto">
+          Esses intrusos são microscópicos e estão nos alimentos!
+        </h2>
+        
         <HeroCarousel />
         
         {/* QuizSection internally manages the symptom image for connection */}
